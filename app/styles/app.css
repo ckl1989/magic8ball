@@ -1,0 +1,70 @@
+.container {
+  background-color: grey;
+  position: relative;
+}
+
+#eight-ball{
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  background: black;
+  border: 30px solid black;
+  padding: 5% 0;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#magic {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 10% 0;
+  background-color: blue;
+  text-align:center;
+  color: white;
+}
+
+#history{
+  height: 500px;
+  color: white;
+  border: solid 5px black;
+}
+
+#triangle{
+  width: 0px;
+  height: 0px;
+  border-style: inset;
+  border-width: 0 75px 110px 75px;
+  border-color: transparent transparent #007bff transparent;
+  float: left;
+  transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+}
+
+.history-column{
+  text-align:center;
+  word-wrap:break-word;
+}
+
+#page-numbers{
+  position: absolute;
+  bottom: 0;
+  margin:auto;
+}
+
+#triangle p {
+  text-align: center;
+  /*top: 80px;
+  left: -47px;*/
+  position: relative;
+  width: 93px;
+  height: 93px;
+  margin: 0px;
+}

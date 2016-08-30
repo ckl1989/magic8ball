@@ -1,0 +1,21 @@
+<!-- {{#each history-items as |item|}}
+<p>
+  Question: {{item.question}} <br>
+  Answer: {{item.answer}}
+</p><br>
+
+{{/each}} -->
+{{#if hasContent}}
+  {{#each pagedContent as |item|}}
+      <p class='history-item'>
+        Question: {{item.question}} <br>
+        Answer: {{item.answer}}
+      </p><br>
+  {{/each}}
+
+  <div id="page-numbers">
+    {{page-numbers content=pagedContent}}
+  </div>
+{{/if}}
+
+{{yield}}

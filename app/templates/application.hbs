@@ -1,3 +1,27 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Welcome to Magic 8 Ball</h2>
+<div class="container">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="buttons">
 
-{{outlet}}
+    </div>
+
+    <div id="eight-ball">
+      <div id="magic">
+          {{random-answer}}
+      </div>
+    </div>
+    <div id="question-input">
+      <form {{action "shake" on="submit"}}>
+        {{input value=question id="question-input" placeholder="Ask your question here then SHAKE to hear from the Magic 8 Ball" class="form-control"}}
+        <button class="btn btn-primary btn-block" id="shake-button" type="submit"> SHAKE! </button>
+      </form>
+       <!-- <button class="shake" {{action "shake"}}> SHAKE! </button> -->
+    </div>
+  </div>
+  <div class="col-md-3">
+    <h3 style="color:white"> Past Questions and Their Answers</h3>
+    <div id="history">
+      {{history-list history-items=model class="history-column"}}
+    </div>
+  </div>
+</div>
